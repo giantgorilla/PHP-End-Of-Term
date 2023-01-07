@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Most Popular Movies</title>
+      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.css"/>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link
+   </head>
+   <body>
+      <div class="col-md-4" style="margin:auto; margin-top:75px;">
+         <table id="movieTable">
+            <thead class="bg-light">
+               <tr>
+                  <th>#</th>
+                  <th>Rank & Title</th>
+                  <th>IMDb Rating</th>
+                  <th>Edit</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <th>1.</th>
+                  <td>The Batman</td>
+                  <td>8,3</td>
+                  <td><button> </button></td>
+               </tr>
+               <tr>
+                  <th>2.</th>
+                  <td>Deep Water</td>
+                  <td>5,4</td>
+               </tr>
+               <tr>
+                  <th>3.</th>
+                  <td>X</td>
+                  <td>7,4</td>
+               </tr>
+               <tr>
+                  <th>4.</th>
+                  <td>The Adam Project</td>
+                  <td>6,7</td>
+               </tr>
+               <tr>
+                  <th>5.</th>
+                  <td>Turning Red</td>
+                  <td>7,1</td>
+               </tr>
+               <tr>
+                  <th>6.</th>
+                  <td>Windfall</td>
+                  <td>8,3</td>
+               </tr>
+               <tr>
+                  <th>7.</th>
+                  <td>Spider-Man: No Way Home</td>
+                  <td>8,5</td>
+               </tr>
+               <tr>
+                  <th>8.</th>
+                  <td>Svart krabba</td>
+                  <td>5,6</td>
+               </tr>
+               <tr>
+                  <th>9.</th>
+                  <td>The Lost City</td>
+                  <td>6,7</td>
+               </tr>
+               <tr>
+                  <th>10.</th>
+                  <td>Fresh</td>
+                  <td>6,7</td>
+               </tr>
+               <tr>
+                  <th>11.</th>
+                  <td>Nightmare Alley</td>
+                  <td>7,1</td>
+                  <button>test</button>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.js"></script>
+      <script>
+         $(document).ready(function() {
+         $('#movieTable').DataTable();
+         } );
+      </script>
+   </body>
+</html>
